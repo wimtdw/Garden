@@ -1,1 +1,2 @@
-# Garden.github.io
+# Garden
+Курсовая работа [Садовый участок](https://wimtdw.github.io/Garden.github.io/)
