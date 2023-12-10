@@ -259,7 +259,7 @@ td {
 
 @media (max-width: 425px) {
     .article{
-        margin:15px 22px 15px 22px;
+        padding: 0 7px;
     }
     .text-cont{
         padding: 0 10px;
