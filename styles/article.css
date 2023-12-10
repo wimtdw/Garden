@@ -258,7 +258,9 @@ td {
 }
 
 @media (max-width: 425px) {
-    
+    .cont{
+        margin:0 7px;
+    }
     .text-cont{
         padding: 0 10px;
     }
