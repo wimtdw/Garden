@@ -115,6 +115,7 @@
         max-width: 100%;
     }
     .card{
+        margin: 15px 22px;
         flex-basis: 100%;
         width: 100%;
         height: 350px;
