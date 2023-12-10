@@ -1,0 +1,130 @@
+
+
+.categories-btn {
+    margin: 25px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cat {
+    border: solid 2px #a4d46c;
+    border-radius: 10px;
+    padding: 5px 8px;
+    margin: 5px 5px;
+    font-weight: 400;
+    cursor: pointer;
+    color: black;
+    background-color: #f8fef6;
+    transition: 0.5s;
+
+}
+.cat.active {
+    background: rgb(148,213,157);
+    background: linear-gradient(270deg, rgba(148,213,157,1) 0%, rgba(217,236,165,1) 100%);
+}
+.container {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+.cards-container {
+    max-width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: start;
+    --width: 230px;
+    --height: 280px;
+}
+
+.card {
+    margin: 10px;
+    flex-basis: var(--width);
+    width: var(--width);
+    height: var(--height);
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    background-color: rgb(248, 248, 248);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 300ms;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.card-top {
+    display: flex;
+    overflow: hidden;
+    height: 55%;
+    width: var(--width);
+
+}
+
+.card-top img {
+    object-fit: cover;
+    flex-grow: 1;
+}
+
+.card-bottom {
+    display: flex;
+    flex-direction: column;
+    height: 45%;
+    width: var(--width);
+}
+
+.category {
+    /* font-family: 'Charis SIL', serif; */
+    /* font-family: 'Ledger', serif; */
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(99, 99, 99);
+    padding: 10px 14px 6px;
+
+}
+
+.card-text {
+    font-family: 'Charis SIL', serif;
+    font-family: 'Ledger', serif;
+    font-size: 18px;
+    padding: 0 14px;
+    color: black;
+}
+@media (min-width: 765px) and (max-width: 1024px) {
+    .cards-container {
+        max-width: 750px;
+    }
+
+}
+@media (max-width: 764px) {
+    .cards-container {
+        max-width: 500px;
+    }
+}
+@media (max-width: 520px) {
+    .cards-container {
+        max-width: 100%;
+    }
+    .card{
+        flex-basis: 100%;
+        width: 100%;
+        height: 350px;
+    }
+    .card-top {
+        width: 100%;
+        height:70%;
+    }
+    .card-bottom{
+        width: 100%;
+        height: 30%;
+    }
+}

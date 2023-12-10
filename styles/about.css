@@ -1,0 +1,45 @@
+.cont {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+article {
+    width: 60%;
+    position: relative;
+}
+
+article p {
+    text-indent: 2rem;
+}
+
+#header1 {
+    text-align: center;
+}
+
+.about-us a {
+    display: inline;
+    color: #389d50;
+}
+
+#emaill {
+    display: inline;
+}
+
+@media (max-width: 1024px) {
+    article {
+        width: 70%;
+    }
+}
+
+@media (max-width: 769px) {
+    article {
+        width: 95%;
+    }
+}
+
+@media (max-width: 426px) {
+    article p {
+        text-indent: 0;
+    }
+}
